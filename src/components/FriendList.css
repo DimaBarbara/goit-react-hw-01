@@ -1,0 +1,11 @@
+.ul-friendList {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+}
+.li-friendList {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+}
