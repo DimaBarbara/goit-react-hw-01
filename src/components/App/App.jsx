@@ -5,12 +5,12 @@ import friends from "../FriendList/friends.json";
 import FriendList from "../FriendList/FriendList";
 import TransactionHistory from "../Transaction/TransactionHistory";
 import transactions from "../Transaction/transactions.json";
-import "./App.css"
+import styles from "./App.module.css"; // Імпорт модуля
 
 export default function App() {
   return (
     <>
-      <h1>Task 1</h1>
+      <h1 className={styles.header}>Task 1</h1> {/* Використання класу з модуля */}
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -18,12 +18,12 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <h1>Task 2</h1>
+      <h1 className={styles.header}>Task 2</h1>
       <FriendList friends={friends} />
-      <h1>Task 3</h1>
-      <TransactionHistory items={transactions}/>
+      <h1 className={styles.header}>Task 3</h1>
+      <TransactionHistory items={transactions} />
     </>
   );
-};
+}
 
 
